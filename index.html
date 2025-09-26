@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roblox Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    /* General Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Press Start 2P', cursive; background: #0f0f1a; color: #ffffff; overflow-x: hidden; }
+
+    /* Neon Effect */
+    .neon { text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff; }
+
+    /* Landing Page */
+    #landing { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(135deg, #1a1a2e, #162447); text-align: center; }
+    #landing h1 { font-size: 2rem; margin-bottom: 1rem; }
+    #landing p { font-size: 1rem; margin-bottom: 2rem; }
+    .btn { padding: 10px 20px; margin: 0 10px; border: 2px solid #0ff; color: #0ff; cursor: pointer; transition: 0.3s; }
+    .btn:hover { background: #0ff; color: #000; }
+
+    /* Sections */
+    section { padding: 80px 20px; min-height: 100vh; }
+
+    /* Projects */
+    .projects { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+    .project-card { background: #1b1b2f; padding: 20px; border: 2px solid #0ff; width: 250px; transition: 0.3s; cursor: pointer; }
+    .project-card:hover { transform: translateY(-5px); box-shadow: 0 0 20px #0ff; }
+
+    /* Skills */
+    .skills { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; }
+    .skill { border: 2px solid #0ff; padding: 10px 15px; border-radius: 8px; transition: 0.3s; }
+    .skill:hover { background: #0ff; color: #000; }
+
+    /* Contact */
+    .contact a { margin: 0 15px; color: #0ff; text-decoration: none; transition: 0.3s; }
+    .contact a:hover { text-shadow: 0 0 10px #0ff; }
+
+    /* Cursor Effect */
+    body { cursor: crosshair; }
+
+  </style>
+</head>
+<body>
+
+  <!-- Landing Page -->
+  <section id="landing">
+    <h1 class="neon">Welcome to My Developer Portfolio</h1>
+    <p>I make immersive experiences in Roblox & beyond</p>
+    <div>
+      <button class="btn" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">Projects</button>
+      <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact</button>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about">
+    <h2 class="neon">About Me</h2>
+    <p>I'm [Your Name], a student learning Game Development (DAE) and skilled in C++ and Roblox Studio. I love creating interactive worlds and experimenting with game mechanics.</p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2 class="neon">My Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Roblox Adventure Game</h3>
+        <p>Created a multiplayer adventure game in Roblox Studio using Lua. Features quests and interactive NPCs.</p>
+      </div>
+      <div class="project-card">
+        <h3>C++ Game Engine Prototype</h3>
+        <p>Developed a basic 2D game engine in C++ to understand rendering and physics mechanics.</p>
+      </div>
+      <div class="project-card">
+        <h3>Mini Roblox Platformer</h3>
+        <p>A small Roblox platformer with custom animations and collectibles.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2 class="neon">Skills & Tech</h2>
+    <div class="skills">
+      <div class="skill">C++</div>
+      <div class="skill">Lua (Roblox Studio)</div>
+      <div class="skill">Unity (Basic)</div>
+      <div class="skill">Git & GitHub</div>
+      <div class="skill">Game Design</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2 class="neon">Contact Me</h2>
+    <div class="contact">
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+      <a href="https://www.roblox.com/users/yourid/profile" target="_blank">Roblox</a>
+      <a href="mailto:youremail@example.com">Email</a>
+    </div>
+  </section>
+
+</body>
+</html>
