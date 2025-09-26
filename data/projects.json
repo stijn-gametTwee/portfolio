@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Roblox Prototype A",
+    "short": "Een experimentele social simulator gemaakt in Luau — focus op emergent gameplay en systems design.",
+    "long": "Prototype A onderzocht player-driven economies en eenvoudige AI NPC's. Gebouwd in Roblox Studio met Luau; features: matchmaking, basic persistence, en prototype UI.",
+    "tech": "Luau, Roblox Studio",
+    "image": "assets/images/project-roblox-a.jpg",
+    "placeId": "920587237",
+    "demo": "https://www.roblox.com/games/920587237",
+    "repo": ""
+  },
+  {
+    "name": "C++ Physics Toy",
+    "short": "Kleine C++ simulatie van een particle system en verlet-integrator voor studieproject.",
+    "long": "C++ app met eenvoudige renderer (SFML of SDL compatible) die particle collisions en forces simuleert. Gebruik voor algoritme-leren en performance-tweaks.",
+    "tech": "C++",
+    "image": "assets/images/project-cpp.jpg",
+    "placeId": "",
+    "demo": "",
+    "repo": ""
+  },
+  {
+    "name": "Mini Game Jam",
+    "short": "Snel prototype gemaakt tijdens een game jam — focus op core loop en feel.",
+    "long": "Prototype met 48 hour timebox, gameplay loop uitgewerkt, level design en polish op controls.",
+    "tech": "Unity, C#",
+    "image": "assets/images/project-jam.jpg",
+    "placeId": "",
+    "demo": "",
+    "repo": ""
+  }
+]
