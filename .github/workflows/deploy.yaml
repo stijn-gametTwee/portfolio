@@ -3,12 +3,13 @@ name: Deploy Astro site to GitHub Pages
 on:
   push:
     branches: [ main ]
-  # Allows you to manually trigger the workflow
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
