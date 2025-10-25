@@ -1,17 +1,17 @@
 export const siteConfig = {
-  name: "Ryan Fitzgerald",
-  title: "Senior Software Engineer",
-  description: "Portfolio website of Ryan Fitzgerald",
+  name: "stijn_gamet",
+  title: "Student Game Development and Roblox Developer",
+  description: "Portfolio of stijn_gamet",
   accentColor: "#1d4ed8",
   social: {
-    email: "your-email@example.com",
-    linkedin: "https://linkedin.com/in/yourprofile",
-    twitter: "https://x.com/rfitzio",
-    github: "https://github.com/RyanFitzgerald",
+    email: "stijn_gamet@icloud.com",
+    linkedin: "",
+    twitter: "",
+    github: "",
   },
   aboutMe:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos asperiores nihil consequatur tempore cupiditate architecto natus commodi corrupti quas quasi facere est, dignissimos odit nam veniam sapiente ut, vitae eligendi ipsum dolor, nostrum ullam impedit! Corrupti ratione mollitia temporibus necessitatibus, consectetur reiciendis recusandae id, dolorum quaerat, vero pariatur. Ratione!",
-  skills: ["Javascript", "React", "Node.js", "Python", "AWS", "Docker"],
+    "I’m an 18-year-old Game Development student at Howest - Digital Arts and Entertainment in Belgium. I am already a developer on the Roblox platform with already some personal projects but also projects I contributed with.",
+  skills: ["Node.js", "C++", "Luau"],
   projects: [
     {
       name: "AI Dev Roundup Newsletter",
