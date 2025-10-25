@@ -6,8 +6,8 @@ export const siteConfig = {
   social: {
     email: "stijn_gamet@icloud.com",
     linkedin: "",
-    twitter: "",
-    github: "",
+    twitter: "https://x.com/stijn_gamet",
+    github: "https://github.com/stijn-gametTwee",
   },
   aboutMe:
     "I’m an 18-year-old Game Development student at Howest - Digital Arts and Entertainment in Belgium. I am already a developer on the Roblox platform with already some personal projects but also projects I contributed with.",
