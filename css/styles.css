@@ -409,3 +409,42 @@ button.btn:hover {
 .dots .active {
   background: var(--accent);
 }
+
+
+/* Fix: ensure skill icons don't expand */
+.skill img{width:28px;height:28px;object-fit:contain}
+.socials-header img,.socials-footer img{width:18px;height:18px}
+
+/* --- Added fixed navbar and footer styles --- */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(10, 10, 10, 0.8);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+main {
+  margin-top: 80px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+footer .socials a {
+  color: #aaa;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer .socials a:hover {
+  color: #fff;
+}
