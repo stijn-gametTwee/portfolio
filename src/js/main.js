@@ -1,11 +1,21 @@
-const boxShadowBox = document.getElementById("Boxshadow3");
-const box = document.getElementById("wtf") 
+async function updateRobloxStats(gameId, statsElement) {
+  try {
+    const res = await fetch(`https://games.roblox.com/v1/games?universeIds=${gameId}`);
+    if (!res.ok) throw new Error("API unreachable");
 
-boxShadowBox.style.boxShadow = "20px 20px #0f0f0f";
+    const data = await res.json();
+    if (!data.data || data.data.length === 0) throw new Error("No data");
 
-box.onmousemove = function(){
-    let shadowVariableX = (event.clientX - (window.innerWidth / 2)) / window.innerWidth * 2;
-    let shadowVariableY = (event.clientY - (window.innerHeight / 2)) / window.innerHeight * 2;
+    const game = data.data[0];
+    const visits = game.visits?.toLocaleString() ?? "N/A";
+    const players = game.playing ?? "0";
 
-    boxShadowBox.style.boxShadow = `${(shadowVariableX * 50 * -1) + 20}px ${(shadowVariableY * 50 * -1) + 20}px #0f0f0f`;
-};
+    statsElement.innerHTML = `
+      <span>👥 Spelers: <b>${players}</b></span>
+      <span>🌍 Bezoeken: <b>${visits}</b></span>
+    `;
+  } catch (e) {
+    console.warn(`⚠️ Kon stats niet laden voor universeId ${gameId}`, e);
+    statsElement.innerHTML = '<span>⚠️ Statistieken niet beschikbaar</span>';
+  }
+}
