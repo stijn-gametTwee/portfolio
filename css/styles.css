@@ -67,7 +67,7 @@ body{
 }
 .social-item img{ width:20px; height:20px; display:block }
 .social-item span{ font-size:.95rem; color:var(--muted) }
-.social-item:hover{ transform:translateY(-4px); box-shadow:0 6px 18px rgba(0,191,166,0.08); }
+.social-item:hover{ transform:translateY(-4px); box-shadow:0 6px 18px rgba(5, 89, 185, 0.459); }
 
 /* Section headings */
 .section{ padding:2.75rem 0; }
