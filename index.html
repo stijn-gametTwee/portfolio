@@ -1,63 +1,48 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio | Jouw Naam</title>
-  <link rel="stylesheet" href="src/css/styles.css" />
-  <script src="https://kit.fontawesome.com/a2e0e6d3a4.js" crossorigin="anonymous"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Stijn — Game Developer</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Optional: font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <canvas id="bg"></canvas>
-
-  <header>
+  <header class="site-header">
     <div class="container">
-      <h1>Jouw Naam</h1>
-      <p class="subtitle">Game Developer • Roblox Scripter • Discord Bot Maker</p>
-      <div class="social-icons">
-        <a href="https://github.com/jouwgithub" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://discord.com/users/jouwdiscordid" target="_blank"><i class="fab fa-discord"></i></a>
-        <a href="https://www.roblox.com/users/jouwrobloxid" target="_blank"><i class="fa-solid fa-cube"></i></a>
-        <a href="https://linkedin.com/in/jouwlinkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <div class="hero-left">
+        <h1><span id="greeting">Hey</span>, I am <span>Stijn</span></h1>
+        <p class="tagline">Game Developer · C++ · Roblox Scripter · Discord Bot Maker</p>
       </div>
+      <nav class="hero-right" aria-label="Socials">
+        <div id="social-grid" class="social-grid"></div>
+      </nav>
     </div>
   </header>
 
   <main>
-    <section id="about">
+    <section id="skills" class="section">
       <div class="container">
-        <h2>Over Mij</h2>
-        <p>Ik ben een <b>Game Development student</b> met ervaring in <b>C++</b>, <b>Node.js</b> en <b>Roblox Lua</b>.</p>
+        <h2>Skills &amp; Tools</h2>
+        <div id="skills-grid" class="skills-grid"></div>
       </div>
     </section>
 
-    <section id="skills">
+    <section id="projects" class="section">
       <div class="container">
-        <h2>Talen & Tools</h2>
-        <div class="skills-grid">
-          <div class="skill"><i class="fa-solid fa-code"></i><span>C++</span></div>
-          <div class="skill"><i class="fab fa-node-js"></i><span>Node.js</span></div>
-          <div class="skill"><i class="fa-solid fa-cube"></i><span>Lua (Roblox)</span></div>
-          <div class="skill"><i class="fab fa-js"></i><span>JavaScript</span></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Dynamische projectsectie -->
-    <section id="projects">
-      <div class="container">
-        <h2>Projecten</h2>
+        <h2>Projects</h2>
         <div id="project-container"></div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>© 2025 Jouw Naam — Portfolio gemaakt met ❤️ en JavaScript</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Stijn. All rights reserved.</p>
+    </div>
   </footer>
 
-  <script src="src/js/robloxApi.js"></script>
-  <script src="src/js/dataLoader.js"></script>
-  <script src="src/js/main.js"></script>
+  <script type="module" src="js/main.js" defer></script>
 </body>
 </html>

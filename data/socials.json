@@ -1,0 +1,6 @@
+[
+  { "name": "GitHub", "url": "https://github.com/stijn-gametTwee", "icon": "assets/icons/github.svg" },
+  { "name": "Discord", "url": "https://discord.com/users/693364490368057366", "icon": "assets/icons/discord.svg" },
+  { "name": "Roblox", "url": "https://www.roblox.com/users/1541563266/profile", "icon": "assets/icons/roblox.svg" },
+  { "name": "Email", "url": "mailto:stijn_gamet@icloud.com", "icon": "assets/icons/mail.svg" }
+]

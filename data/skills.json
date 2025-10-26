@@ -1,0 +1,7 @@
+[
+  { "name": "C++", "icon": "assets/icons/cpp.svg" },
+  { "name": "JavaScript", "icon": "assets/icons/js.svg" },
+  { "name": "Node.js", "icon": "assets/icons/nodejs.svg" },
+  { "name": "Lua (Roblox)", "icon": "assets/icons/luau.svg" },
+  { "name": "Git", "icon": "assets/icons/git.svg" }
+]
