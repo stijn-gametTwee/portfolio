@@ -1,0 +1,177 @@
+@font-face { font-family: KenneyMiniSquare; src: url('/src/fonts/Coolvetica Rg.otf'); }
+
+p{
+    font-family: KenneyMiniSquare;
+}
+
+span {
+    padding-left: 5px;
+    padding-right: 1px;
+}
+
+.sp1{
+    color: #ffffff;
+    background-color: #0D1A30;
+}
+.sp2 {
+    color: #0D1A30;
+    background-color: #ffffff;
+}
+
+body{
+    font-family: KenneyMiniSquare;
+}
+
+.textActimel{
+    color: #FFFFFF;
+    font-size: 20px;
+}
+.text1 {
+    color: #FFFFFF;
+    font-size: 100px;
+    text-shadow: 0px 10px 0px #0D1A30;
+}
+.text2 {
+    color: #FFFFFF;
+    font-size: 50px;
+    text-shadow: 0px 10px 0px #0D1A30;
+}
+.text3 {
+    color: #0D1A30;
+    font-size: 150px;
+}
+.text4 {
+    color: #0D1A30;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 40px;
+}
+.text5 {
+    color: #ffffff;
+    font-size: 150px;
+}
+.text6 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+.textVideo1{
+    color: #0D1A30;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 40px;
+}
+.textVideo2{
+    margin-top: 15px;
+    color: #0D1A30;
+    font-size: 30px;
+    font-weight: 500;
+}
+.gifBorder {
+    border:7px solid #0D1A30;
+    box-shadow: -20px 20px#0D1A30;
+}
+.gifBorderEnd {
+    border:7px solid #0D1A30;
+    box-shadow: 20px 20px#0D1A30;
+}
+
+
+.height1 {
+    height: 100px;
+}
+.height2 {
+    height: 200px;
+}
+.height3 {
+    height: 20px;
+}
+
+
+.bg1 {
+    background-color: #1A1A1A;
+}
+
+.Blue{
+    background-color: #0D1A30;
+}
+.White{
+    background-color: #ffffff;
+}
+.DarkBlue{
+    background-color: #04080F;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.bg{
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.image1 {
+    position: relative;
+    top: 20px;
+    left: 0;
+
+}
+.image2 {
+    position: absolute;
+    top: -100px;
+    left: 0px;
+}
+
+.Margin1{
+    margin-bottom: 5%;
+}
+
+.Hover1:hover {
+    transition: 0.1s;
+    transform: scale(1.2);
+}
+.NoPadding {
+    padding: 0px;
+    width: 120px;
+    height: 100px;
+}
+.NoPadding2 {
+    padding: 0px;
+    width: 250px;
+    height: 80px;
+}
+.PaddingDiff{
+    max-width: 2px;
+}
+.Empty{
+    height: 50px;
+}
+.Padding {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+.width1{
+    width: 40px;
+}
+.BOXSHADOW1 {
+    padding: 0px;
+    border-top-left-radius: 23px;
+    border-top-right-radius: 23px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 30px;
+}
+.BOXSHADOW2 {
+    box-shadow: 30px 30px#0f0f0f;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Jouw Naam</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://kit.fontawesome.com/a2e0e6d3a4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <canvas id="bg"></canvas>
+
+  <header>
+    <div class="container">
+      <h1>Jouw Naam</h1>
+      <p class="subtitle">Game Developer • Roblox Scripter • Discord Bot Maker</p>
+      <div class="social-icons">
+        <a href="https://github.com/jouwgithub" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://discord.com/users/jouwdiscordid" target="_blank"><i class="fab fa-discord"></i></a>
+        <a href="https://www.roblox.com/users/jouwrobloxid" target="_blank"><i class="fa-solid fa-cube"></i></a>
+        <a href="https://linkedin.com/in/jouwlinkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="container">
+        <h2>Over Mij</h2>
+        <p>Ik ben een <b>Game Development student</b> met ervaring in <b>C++</b>, <b>Node.js</b> en <b>Roblox Lua</b>.</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2>Talen & Tools</h2>
+        <div class="skills-grid">
+          <div class="skill"><i class="fa-solid fa-code"></i><span>C++</span></div>
+          <div class="skill"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+          <div class="skill"><i class="fa-solid fa-cube"></i><span>Lua (Roblox)</span></div>
+          <div class="skill"><i class="fab fa-js"></i><span>JavaScript</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dynamische projectsectie -->
+    <section id="projects">
+      <div class="container">
+        <h2>Projecten</h2>
+        <div id="project-container"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Jouw Naam — Portfolio gemaakt met ❤️ en JavaScript</p>
+  </footer>
+
+  <script src="js/robloxApi.js"></script>
+  <script src="js/dataLoader.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
