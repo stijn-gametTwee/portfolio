@@ -1,6 +1,22 @@
 {
   "categories": [
       
+{
+      "title": "C++ Projects",
+      "icon": "fa-solid fa-gamepad",
+      "projects": [
+        {
+          "name": "Pong!",
+          "description": "A minigame made using a 2D SDL engine.",
+          "link": "#",
+          "media": [
+            { "type": "video", "src": "assets/media/cpp_pong/clip.mp4" }
+          ]
+        }
+
+      ]
+    },
+
     {
       "title": "Discord Bots",
       "icon": "fa-brands fa-discord",
