@@ -125,10 +125,10 @@ function initSlideshows() {
 
     if (!prevBtn) {
       // create controls if missing
-      const p = document.createElement('button'); p.className = 'prev'; p.innerHTML = '&#10094;'; slideshow.appendChild(p);
+      //const p = document.createElement('button'); p.className = 'prev'; p.innerHTML = '&#10094;'; slideshow.appendChild(p);
     }
     if (!nextBtn) {
-      const n = document.createElement('button'); n.className = 'next'; n.innerHTML = '&#10095;'; slideshow.appendChild(n);
+      //const n = document.createElement('button'); n.className = 'next'; n.innerHTML = '&#10095;'; slideshow.appendChild(n);
     }
 
     slideshow.querySelector('.prev').addEventListener('click', () => {

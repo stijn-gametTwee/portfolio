@@ -1,5 +1,24 @@
 {
   "categories": [
       
+    {
+      "title": "Discord Bots",
+      "icon": "fa-brands fa-discord",
+      "projects": [
+        {
+          "name": "FiveR - Hulpdiensten Nederland Bot",
+          "description": "Moderation, Utility, Custom advanced Features and a Database with MySQL.",
+          "link": "https://discord.com/users/1276459639613165692",
+          "media": [
+            { "type": "image", "src": "assets/media/fiverbot/img1.png" },
+            { "type": "image", "src": "assets/media/fiverbot/img2.png" },
+            { "type": "image", "src": "assets/media/fiverbot/img3.png" },
+            { "type": "image", "src": "assets/media/fiverbot/img4.png" },
+            { "type": "image", "src": "assets/media/fiverbot/img5.png" }
+          ]
+        }
+      ]
+    }
+
   ]
 }
