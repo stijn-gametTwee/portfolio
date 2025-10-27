@@ -1,10 +1,8 @@
 import { loadProjects, loadSocials, loadSkills } from './dataLoader.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
-  // year
   document.getElementById('year').textContent = new Date().getFullYear();
 
-  // load socials
   const socials = await loadSocials();
   const socialGrid = document.getElementById('social-grid');
   socials.forEach(s => {
@@ -17,7 +15,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     socialGrid.appendChild(a);
   });
 
-  // load skills
+
   const skills = await loadSkills();
   const skillsGrid = document.getElementById('skills-grid');
   skills.forEach(skill => {
@@ -27,7 +25,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     skillsGrid.appendChild(div);
   });
 
-  // load projects/categories
+
   const categories = await loadProjects();
   const projectContainer = document.getElementById('project-container');
 
@@ -80,14 +78,11 @@ document.addEventListener('DOMContentLoaded', async () => {
   initSlideshows();
 });
 
-/* helper: create media element HTML */
 function renderMediaElement(m, active = false) {
   const cls = active ? 'active' : '';
   if (!m || !m.src) return '';
   const type = m.type ? m.type.toLowerCase() : guessTypeFromSrc(m.src);
   if (type === 'video') {
-    // use <video> but DO NOT autoplay too many— user can play controls if needed
-    // we include controls for accessibility
     return `<video class="${cls}" controls playsinline preload="metadata"><source src="${m.src}"></video>`;
   } else {
     return `<img class="${cls}" src="${m.src}" alt="${m.alt ? escapeHtml(m.alt) : escapeHtml(m.src)}">`;
@@ -119,6 +114,7 @@ function initSlideshows() {
       goTo((index + 1) % slides.length);
     }, 4500);
 
+    /*
     // prev/next controls
     const prevBtn = slideshow.querySelector('.prev');
     const nextBtn = slideshow.querySelector('.next');
@@ -135,7 +131,7 @@ function initSlideshows() {
       goTo((index - 1 + slides.length) % slides.length);
       resetTimer();
     });
-    slideshow.querySelector('.next').addEventListener('click', () => { goTo((index + 1) % slides.length); resetTimer(); });
+    slideshow.querySelector('.next').addEventListener('click', () => { goTo((index + 1) % slides.length); resetTimer(); });*/
 
     // dot clicks
     dots.forEach((dot, i) => {
@@ -177,12 +173,8 @@ function initSlideshows() {
   });
 }
 
-/* simple escape for alt text */
 function escapeHtml(str){ return String(str).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":"&#39;"}[c])); }
 
-/* ==========================
-   Dynamische begroeting
-========================== */
 const greetings = [
   'Hey',      // Nederlands
   'Hi',       // Engels
