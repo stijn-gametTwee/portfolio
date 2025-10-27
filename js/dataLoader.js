@@ -22,3 +22,5 @@ export async function loadSkills() {
   if (!res.ok) return [];
   return await res.json();
 }
+
+// stijn_gamet
