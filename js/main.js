@@ -83,7 +83,7 @@ function renderMediaElement(m, active = false) {
   if (!m || !m.src) return '';
   const type = m.type ? m.type.toLowerCase() : guessTypeFromSrc(m.src);
   if (type === 'video') {
-    return `<video class="${cls}" controls playsinline preload="metadata"><source src="${m.src}"></video>`;
+    return `<video class="${cls}" controls controlsList="nodownload" oncontextmenu="return false" playsinline preload="metadata"><source src="${m.src}"></video>`;
   } else {
     return `<img class="${cls}" src="${m.src}" alt="${m.alt ? escapeHtml(m.alt) : escapeHtml(m.src)}">`;
   }
