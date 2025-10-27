@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         <div class="content">
           <h4>${proj.name}</h4>
           <p>${proj.description}</p>
-          ${proj.link ? `<a class="btn" href="${proj.link}" target="_blank" rel="noopener noreferrer">Bekijk</a>` : ''}
+          ${proj.link ? `<a class="btn" href="${proj.link}" target="_blank" rel="noopener noreferrer">See more</a>` : ''}
         </div>
       `;
 
