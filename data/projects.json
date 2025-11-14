@@ -1,22 +1,39 @@
 {
   "categories": [
-      
-{
+    {
       "title": "C++ Projects",
       "icon": "fa-solid fa-gamepad",
       "projects": [
         {
           "name": "Pong!",
           "description": "A minigame made using a 2D SDL engine.",
-          "link": "#",
+          "link": "",
           "media": [
-            { "type": "video", "src": "assets/media/cpp_pong/clip.mp4" }
+            {
+              "type": "video",
+              "src": "assets/media/cpp_pong/clip.mp4"
+            }
           ]
         }
-
       ]
     },
-
+    {
+      "title": "Roblox Projects",
+      "icon": "fa-solid fa-gamepad",
+      "projects": [
+        {
+          "name": "GPS System",
+          "description": "This system is made using the Dijkstra's algorithm.",
+          "link": "",
+          "media": [
+            {
+              "type": "video",
+              "src": "https://cdn.discordapp.com/attachments/1276464750917714016/1438877368956747856/gameplay_sneak.mp4?ex=69187a79&is=691728f9&hm=ddcd9dc3ac3dc19fb95d14dbe0a864c146ade096301d5c930d53d2cada992d4b&"
+            }
+          ]
+        }
+      ]
+    },
     {
       "title": "Discord Bots",
       "icon": "fa-brands fa-discord",
@@ -26,15 +43,29 @@
           "description": "Moderation, Utility, Custom advanced Features and a Database with MySQL.",
           "link": "https://discord.com/users/1276459639613165692",
           "media": [
-            { "type": "image", "src": "assets/media/fiverbot/img1.png" },
-            { "type": "image", "src": "assets/media/fiverbot/img2.png" },
-            { "type": "image", "src": "assets/media/fiverbot/img3.png" },
-            { "type": "image", "src": "assets/media/fiverbot/img4.png" },
-            { "type": "image", "src": "assets/media/fiverbot/img5.png" }
+            {
+              "type": "image",
+              "src": "assets/media/fiverbot/img1.png"
+            },
+            {
+              "type": "image",
+              "src": "assets/media/fiverbot/img2.png"
+            },
+            {
+              "type": "image",
+              "src": "assets/media/fiverbot/img3.png"
+            },
+            {
+              "type": "image",
+              "src": "assets/media/fiverbot/img4.png"
+            },
+            {
+              "type": "image",
+              "src": "assets/media/fiverbot/img5.png"
+            }
           ]
         }
       ]
     }
-
   ]
 }
