@@ -54,10 +54,15 @@ document.addEventListener('DOMContentLoaded', async () => {
       let mediaHTML = '';
       if (proj.media && proj.media.length > 1) {
         mediaHTML = `<div class="slideshow">` + proj.media.map((m, i) => renderMediaElement(m, i === 0)).join('') +
-                    `<div class="dots">${proj.media.map(() => '<span></span>').join('')}</div></div>`;
+          `<div class="dots">${proj.media.map(() => '<span></span>').join('')}</div></div>`;
       } else if (proj.media && proj.media.length === 1) {
-        mediaHTML = renderMediaElement(proj.media[0], true);
+        mediaHTML = `
+    <div class="slideshow">
+      ${renderMediaElement(proj.media[0], true)}
+    </div>
+  `;
       }
+
 
       card.innerHTML = `
         <div class="media">${mediaHTML}</div>
@@ -193,15 +198,15 @@ function initSlideshows() {
       if (dots[index]) dots[index].classList.add('active');
       // pause other videos and optionally play current if it's video
       slides.forEach((s, idx) => {
-  if (s.tagName === 'IFRAME' && idx !== index) {
-    s.src = s.src; // stops YouTube playback
-  }
-});
+        if (s.tagName === 'IFRAME' && idx !== index) {
+          s.src = s.src; // stops YouTube playback
+        }
+      });
     }
   });
 }
 
-function escapeHtml(str){ return String(str).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":"&#39;"}[c])); }
+function escapeHtml(str) { return String(str).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": "&#39;" }[c])); }
 
 const greetings = [
   'Hey',      // Nederlands
