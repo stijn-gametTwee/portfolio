@@ -129,14 +129,6 @@ function renderMediaElement(m, active = false) {
   return `<img class="${cls}" src="${m.src}" alt="${escapeHtml(m.alt || m.src)}">`;
 }
 
-
-function guessTypeFromSrc(src) {
-  const s = src.toLowerCase();
-  if (s.endsWith('.mp4') || s.endsWith('.webm') || s.endsWith('.mov')) return 'video';
-  if (s.endsWith('.gif')) return 'gif';
-  return 'image';
-}
-
 /* slideshow: prev/next + auto rotate + dots */
 function initSlideshows() {
   document.querySelectorAll('.slideshow').forEach(slideshow => {
