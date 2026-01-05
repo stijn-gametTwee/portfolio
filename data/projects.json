@@ -10,8 +10,8 @@
           "link": "",
           "media": [
             {
-              "type": "video",
-              "src": "assets/media/cpp_pong/clip.mp4"
+              "type": "youtube",
+              "src": "https://youtu.be/QuL82MdKLgE"
             }
           ]
         }
@@ -27,7 +27,7 @@
           "link": "",
           "media": [
             {
-              "type": "video",
+              "type": "youtube",
               "src": "https://youtu.be/UywjnhiQIlk"
             }
           ]
