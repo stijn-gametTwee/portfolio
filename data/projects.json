@@ -31,6 +31,17 @@
               "src": "https://youtu.be/UywjnhiQIlk"
             }
           ]
+        },
+        {
+          "name": "ELS",
+          "description": "This system is a System based on the Emergency Lighting System, the rendering and looping is all Client sided but the whole server sees when a siren etc is enabled.",
+          "link": "",
+          "media": [
+            {
+              "type": "youtube",
+              "src": "https://youtu.be/Zfbne9xsTrM"
+            }
+          ]
         }
       ]
     },
