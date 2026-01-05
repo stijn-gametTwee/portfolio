@@ -117,7 +117,7 @@ function renderMediaElement(m, active = false) {
     return `
       <iframe
         class="${cls}"
-        src="https://www.youtube.com/embed/${videoId}?rel=0&modestbranding=1"
+        src="https://www.youtube-nocookie.com/embed/${videoId}?rel=0&modestbranding=1&controls=1&showinfo=0&playsinline=1"
         title="${escapeHtml(m.alt || 'YouTube video')}"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
