@@ -79,15 +79,31 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 function renderMediaElement(m, active = false) {
-  const cls = active ? 'active' : '';
   if (!m || !m.src) return '';
+
+  const cls = active ? 'active' : '';
   const type = m.type ? m.type.toLowerCase() : guessTypeFromSrc(m.src);
-  if (type === 'video') {
-    return `<video class="${cls}" controls controlsList="nodownload" oncontextmenu="return false" playsinline preload="metadata"><source src="${m.src}"></video>`;
-  } else {
-    return `<img class="${cls}" src="${m.src}" alt="${m.alt ? escapeHtml(m.alt) : escapeHtml(m.src)}">`;
+
+  // 🎬 YouTube embed
+  if (type === 'youtube') {
+    const videoId = extractYouTubeId(m.src);
+    if (!videoId) return '';
+
+    return `
+      <iframe
+        class="${cls}"
+        src="https://www.youtube.com/embed/${videoId}?rel=0&modestbranding=1"
+        title="${escapeHtml(m.alt || 'YouTube video')}"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    `;
   }
+
+  return `<img class="${cls}" src="${m.src}" alt="${escapeHtml(m.alt || m.src)}">`;
 }
+
 
 function guessTypeFromSrc(src) {
   const s = src.toLowerCase();
