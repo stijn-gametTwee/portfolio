@@ -78,13 +78,38 @@ document.addEventListener('DOMContentLoaded', async () => {
   initSlideshows();
 });
 
+function extractYouTubeId(url) {
+  try {
+    const u = new URL(url);
+
+    // youtube.com/watch?v=ID
+    if (u.hostname.includes('youtube.com')) {
+      return u.searchParams.get('v');
+    }
+
+    // youtu.be/ID
+    if (u.hostname.includes('youtu.be')) {
+      return u.pathname.slice(1);
+    }
+  } catch {
+    return null;
+  }
+}
+
+function guessTypeFromSrc(src) {
+  const s = src.toLowerCase();
+  if (s.includes('youtube.com') || s.includes('youtu.be')) return 'youtube';
+  if (s.endsWith('.gif')) return 'gif';
+  return 'image';
+}
+
+
 function renderMediaElement(m, active = false) {
   if (!m || !m.src) return '';
 
   const cls = active ? 'active' : '';
   const type = m.type ? m.type.toLowerCase() : guessTypeFromSrc(m.src);
 
-  // 🎬 YouTube embed
   if (type === 'youtube') {
     const videoId = extractYouTubeId(m.src);
     if (!videoId) return '';
@@ -115,7 +140,7 @@ function guessTypeFromSrc(src) {
 /* slideshow: prev/next + auto rotate + dots */
 function initSlideshows() {
   document.querySelectorAll('.slideshow').forEach(slideshow => {
-    const slides = Array.from(slideshow.querySelectorAll('img, video'));
+    const slides = Array.from(slideshow.querySelectorAll('img, video, iframe'));
     const dots = Array.from(slideshow.querySelectorAll('.dots span'));
     if (slides.length === 0) return;
     let index = slides.findIndex(s => s.classList.contains('active'));
@@ -176,15 +201,10 @@ function initSlideshows() {
       if (dots[index]) dots[index].classList.add('active');
       // pause other videos and optionally play current if it's video
       slides.forEach((s, idx) => {
-        if (s.tagName === 'VIDEO') {
-          if (idx === index) {
-            // do not autoplay; keep user control - but unmute is not done
-            // s.play().catch(()=>{});
-          } else {
-            s.pause();
-          }
-        }
-      });
+  if (s.tagName === 'IFRAME' && idx !== index) {
+    s.src = s.src; // stops YouTube playback
+  }
+});
     }
   });
 }
