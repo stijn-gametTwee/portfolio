@@ -139,6 +139,17 @@ body{
   display:block;
   object-fit:cover;
 }
+.slideshow iframe {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 9;
+  display: none;
+}
+
+.slideshow iframe.active {
+  display: block;
+}
+
 .slideshow{ position:relative; overflow:hidden; border-radius:8px; }
 .slideshow img, .slideshow video{ position:absolute; left:0; top:0; opacity:0; transition:opacity .45s ease; }
 .slideshow img.active, .slideshow video.active{ opacity:1; position:relative; }
