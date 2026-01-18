@@ -23,7 +23,7 @@
       "projects": [
         {
           "name": "GPS System",
-          "description": "This system is made using the Dijkstra's algorithm.",
+          "description": "This system is made using the Dijkstra's algorithm. This is using nodes that are connected to each other, this calculates to closest node but also which direction you are going to calculate the shortest path to the destionation.",
           "link": "",
           "media": [
             {
